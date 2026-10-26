@@ -41,11 +41,7 @@
     "datePrecision": "day",
     "event": "Department of Mechanical Engineering seminar, Bayero University, Kano",
     "role": "Speaker",
-    "topics": [
-      "CAD and mould design",
-      "SOLIDWORKS",
-      "Manufacturing"
-    ],
+    "topics": ["CAD and mould design", "SOLIDWORKS", "Manufacturing"],
     "resources": [
       {
         "id": "mold-design-solidworks-slides",
@@ -105,11 +101,7 @@
     "datePrecision": "day",
     "event": "FIRS technical session, Kano Large Taxpayers Office",
     "role": "Speaker",
-    "topics": [
-      "AI and productivity",
-      "Prompting",
-      "Workplace tools"
-    ],
+    "topics": ["AI and productivity", "Prompting", "Workplace tools"],
     "resources": [
       {
         "id": "ai-workplace-firs-slides",
@@ -137,11 +129,7 @@
     "datePrecision": "unknown",
     "event": "Google I/O Extended",
     "role": "Speaker",
-    "topics": [
-      "AI and creativity",
-      "Google AI",
-      "Responsible AI"
-    ],
+    "topics": ["AI and creativity", "Google AI", "Responsible AI"],
     "resources": [
       {
         "id": "ai-creativity-google-io-extended-slides",
@@ -153,6 +141,74 @@
         "file": null,
         "externalUrl": "https://drive.google.com/file/d/1pDArirMADpWPsRGZM73_l5wvTwE6q8J0/view",
         "description": "Public PDF of the presentation slides.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "voostech-ai-masterclass-2026",
+    "status": "published",
+    "slug": "voostech-ai-masterclass-2026",
+    "title": "Voostech AI Masterclass Day",
+    "summary": "An online masterclass on practical AI for business, academic research, content creation and product building, with demonstrations, responsible-use guidance and professional learning tracks.",
+    "date": "2026-07-11",
+    "datePrecision": "day",
+    "event": "Voostech AI Masterclass Day",
+    "organiser": "Voost Technologies Limited",
+    "deliveryMode": "Online",
+    "role": "Facilitator",
+    "topics": [
+      "AI for business",
+      "AI for research and teaching",
+      "Content creation",
+      "AI-assisted product building"
+    ],
+    "resources": [
+      {
+        "id": "voostech-ai-masterclass-2026-slides",
+        "status": "published",
+        "ownerId": "voostech-ai-masterclass-2026",
+        "title": "Voostech AI Masterclass Day — slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/11noF8C0p8N2WWciTVasd0aY1KHbRBkdt/view",
+        "description": "Presentation slides, including the professional-track offers.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "auxetic-plate-lattice-filled-tubes-icrast-2026",
+    "status": "published",
+    "slug": "auxetic-plate-lattice-filled-tubes-icrast-2026",
+    "title": "Design and Crashworthiness Evaluation of Auxetic Plate-Lattice-Filled Tubes",
+    "summary": "A conference presentation on auxetic plate-lattice unit-cell design, finite element evaluation of lattice-filled tubes and multi-objective optimisation of crashworthiness.",
+    "date": "2026",
+    "datePrecision": "year",
+    "event": "International Conference on Recent Advances in Science and Technology (ICRAST 2026)",
+    "role": "Speaker",
+    "topics": [
+      "Auxetic plate-lattice structures",
+      "Crashworthiness",
+      "Finite element analysis",
+      "Multi-objective optimisation"
+    ],
+    "resources": [
+      {
+        "id": "auxetic-plate-lattice-filled-tubes-icrast-2026-slides",
+        "status": "published",
+        "ownerId": "auxetic-plate-lattice-filled-tubes-icrast-2026",
+        "title": "Auxetic Plate-Lattice-Filled Tubes — ICRAST 2026 slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/11iBSWCK2xq89FIHebHOYdQ40RLUvnJ9X/view",
+        "description": "Conference slides with the concluding diagram slide retained.",
         "updatedAt": "2026-10-26",
         "publicRelease": true,
         "externalCheckedAt": "2026-10-26"

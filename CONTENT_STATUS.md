@@ -69,3 +69,9 @@ LinkedIn and GitHub URLs were supplied by the handoff; current availability has 
 Pending reconciliation: the earlier bounded sheet import supplies 2025/2026 Second-semester deliveries and level 300 for MEC3207/BUK-MEE308, while this handoff calls their sessions and levels unconfirmed. Those existing sourced values are retained pending owner verification; no new dates were inferred. GET102 programme applicability also needs confirmation; the existing sheet value is retained. CDL appointment start remains omitted publicly, as September 2024 requires verification.
 
 Remaining assets: approved course files and delivery mappings, speaking decks/event facts, evidence for draft case studies and a sanitised public CV. Historical teaching ratings are not displayed; source context can be added later if desired. No raw CV or private contacts were copied. No publication authorisation was inferred.
+
+## Additional presentations — 26 October 2026
+
+- Voostech AI Masterclass Day: 11 July 2026, online. Owner confirmed the year and retention of offer slides. Public PDF omits the phone-number closing slide; 39 slides retained.
+- ICRAST 2026: Design and Crashworthiness Evaluation of Auxetic Plate-Lattice-Filled Tubes. Year confirmed by title slide; exact date unavailable. Converted PDF retains all 26 slides, including the final image-only slide.
+- Both reviewed PDFs uploaded to the private website publishing folder. Owner approved public link sharing on 26 October 2026. Both PDFs are available to anyone with the link as viewers, with downloads enabled; website records and resources are published. The publishing folder remains private.
