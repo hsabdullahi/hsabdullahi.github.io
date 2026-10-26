@@ -45,6 +45,23 @@ export default function Contact() {
               </a>
             </p>
           )}
+          <section
+            className="contact-booking"
+            aria-labelledby="booking-heading"
+          >
+            <h3 id="booking-heading">Book a session</h3>
+            <p>
+              Choose an available time to discuss research, collaboration or
+              engineering education.
+            </p>
+            <a
+              className="button"
+              href="https://calendar.app.google/7QWTx7pnDyit965i9"
+            >
+              Choose a time <ActionIcon kind="external" />
+            </a>
+            <p className="small">Book through Google Calendar.</p>
+          </section>
           <h3>Academic & professional profiles</h3>
           <div className="contact-profiles">
             {profile.links.map((link) => (

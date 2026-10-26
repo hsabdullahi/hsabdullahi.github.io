@@ -30,9 +30,11 @@ export function ResourceActions({ resource }: { resource: Resource }) {
     <a
       className="text-link"
       href={resource.externalUrl}
-      aria-label={`${resource.category === "slides" ? "Open slides" : "Open resource"}: ${resource.title} (external site)`}
+      aria-label={`${resource.category === "slides" ? `View slides (${resource.format})` : "Open resource"}: ${resource.title} (external site)`}
     >
-      {resource.category === "slides" ? "Open slides" : "Open resource"}{" "}
+      {resource.category === "slides"
+        ? `View slides (${resource.format})`
+        : "Open resource"}{" "}
       <ActionIcon kind="external" />
     </a>
   ) : null;

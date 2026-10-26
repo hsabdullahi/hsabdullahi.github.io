@@ -129,7 +129,10 @@ em {
   text-decoration: none;
   line-height: 1.4;
 }
-.wordmark span {
+.wordmark-name-short {
+  display: none;
+}
+.wordmark .wordmark-tagline {
   display: block;
   font: 10px/2 var(--mono);
   font-weight: 400;
@@ -709,7 +712,7 @@ figcaption {
   .wordmark {
     font-size: 17px;
   }
-  .wordmark span {
+  .wordmark .wordmark-tagline {
     font-size: 8px;
   }
   .menu-toggle {
@@ -1021,7 +1024,7 @@ figcaption {
   }
 }
 /* Metadata stays readable at every breakpoint. */
-.wordmark span,
+.wordmark .wordmark-tagline,
 .appointment .mono,
 figcaption,
 .teaching-grid .mono,
@@ -1234,6 +1237,19 @@ figcaption,
 .bio-section {
   margin-top: 48px;
 }
+.contact-booking {
+  margin: 40px 0;
+  padding: 28px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.contact-booking > p {
+  margin-top: 12px;
+  max-width: 52ch;
+}
+.contact-booking > .button {
+  margin-top: 20px;
+}
 .contact-profiles {
   margin-top: 24px;
 }
@@ -1282,6 +1298,39 @@ figcaption,
 .teaching-statement,
 .research-interests {
   margin: 32px 0;
+}
+.research-interest-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  margin: 28px 0 56px;
+  padding: 0;
+  list-style: none;
+}
+.research-interest-list li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 16px;
+  align-items: baseline;
+  border-top: 1px solid var(--rule);
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  break-inside: avoid;
+}
+.research-interest-number {
+  color: var(--oxide);
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  .research-interest-list {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  .research-interest-list li {
+    padding: 16px 0;
+    font-size: 18px;
+  }
 }
 .project-feature p {
   margin: 24px 0;
@@ -1356,6 +1405,12 @@ figcaption,
   margin-bottom: 16px;
 }
 @media (max-width: 900px) {
+  .wordmark-name-full {
+    display: none;
+  }
+  .wordmark-name-short {
+    display: inline;
+  }
   .header {
     position: relative;
     min-height: 88px;

@@ -20,8 +20,9 @@ export function Header({ links }: { links: NavigationItem[] }) {
         <style>{`@media(max-width:900px){.header{flex-wrap:wrap;padding-top:20px}.menu-toggle{display:none}.nav{display:flex;position:static;flex-direction:row;flex-wrap:wrap;width:100%;padding:12px 0;border:0}}`}</style>
       </noscript>
       <Link href="/" className="wordmark">
-        Hamza S. Abdullahi
-        <span>Engineering · Education · Systems</span>
+        <span className="wordmark-name-full">Hamza Sulayman Abdullahi</span>
+        <span className="wordmark-name-short">Hamza S. Abdullahi</span>
+        <span className="wordmark-tagline">Engineering · Education · Systems</span>
       </Link>
       <button
         ref={button}

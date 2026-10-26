@@ -196,8 +196,7 @@ export default function Home() {
         <div>
           <p className="lead">
             I’m Hamza Sulayman Abdullahi, a mechanical engineer and{" "}
-            {profile.rank}
-            at Bayero University, Kano.
+            {profile.rank} at Bayero University, Kano.
           </p>
           <p>{profile.biography}</p>
           <dl className="roles">

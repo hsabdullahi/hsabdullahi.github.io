@@ -53,9 +53,17 @@ export default function Research() {
       {profile.researchThemes.length > 0 && (
         <section className="research-interests">
           <h2>Research interests</h2>
-          <ul>
-            {profile.researchThemes.map((theme) => (
-              <li key={theme}>{theme}</li>
+          <ul className="research-interest-list" role="list">
+            {profile.researchThemes.map((theme, index) => (
+              <li key={theme}>
+                <span
+                  className="mono research-interest-number"
+                  aria-hidden="true"
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span>{theme}</span>
+              </li>
             ))}
           </ul>
         </section>

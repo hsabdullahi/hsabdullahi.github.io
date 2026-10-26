@@ -2,6 +2,7 @@ import { ActionIcon } from "@/components/action-icon";
 import Link from "next/link";
 import { talks } from "@/lib/content";
 import { Breadcrumbs } from "@/components/editorial";
+import { ResourceActions } from "@/components/resources";
 import { formatDate } from "@/lib/format";
 import type { Talk } from "@/lib/schemas";
 export function SpeakingIndex({
@@ -64,9 +65,13 @@ export function SpeakingIndex({
                   </h3>
                   {talk.event && <p className="small">{talk.event}</p>}
                   <p>{talk.summary}</p>
-                  {talk.resources.some((r) => r.category === "slides") && (
-                    <p className="small">Presentation resources available</p>
-                  )}
+                  {talk.resources
+                    .filter((resource) => resource.category === "slides")
+                    .map((resource) => (
+                      <div key={resource.id}>
+                        <ResourceActions resource={resource} />
+                      </div>
+                    ))}
                 </div>
                 <Link
                   className="text-link"

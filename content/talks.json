@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "id": "tooling-die-design-precision-manufacturing",
+    "status": "published",
+    "slug": "tooling-die-design-precision-manufacturing",
+    "title": "Tooling, Die Design & Precision Manufacturing Systems",
+    "summary": "A training programme covering tooling fundamentals, die design, forging and mould tooling, precision manufacturing, and digital tooling management.",
+    "date": "2026-10-19",
+    "datePrecision": "day",
+    "event": "NASENI HEIDI training, 19–20 October 2026",
+    "role": "Facilitator",
+    "topics": [
+      "Tooling and die design",
+      "Precision manufacturing",
+      "Digital tooling"
+    ],
+    "resources": [
+      {
+        "id": "tooling-die-design-precision-manufacturing-slides",
+        "status": "published",
+        "ownerId": "tooling-die-design-precision-manufacturing",
+        "title": "Tooling, Die Design & Precision Manufacturing Systems — slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/10-xb1fnwRxT2pLiddYoVNc4j3qWClEd0/view",
+        "description": "Public PDF of the presentation slides.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "mold-design-solidworks",
+    "status": "published",
+    "slug": "mold-design-solidworks",
+    "title": "Mold Design using SOLIDWORKS®",
+    "summary": "A departmental seminar on mould design workflows in SOLIDWORKS, from parting lines and cores to mould assembly, analysis and troubleshooting.",
+    "date": "2025-08-27",
+    "datePrecision": "day",
+    "event": "Department of Mechanical Engineering seminar, Bayero University, Kano",
+    "role": "Speaker",
+    "topics": [
+      "CAD and mould design",
+      "SOLIDWORKS",
+      "Manufacturing"
+    ],
+    "resources": [
+      {
+        "id": "mold-design-solidworks-slides",
+        "status": "published",
+        "ownerId": "mold-design-solidworks",
+        "title": "Mold Design using SOLIDWORKS® — slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/1PQDn--Ffoeca3f-mZLEWkjb2T6pSE3XN/view",
+        "description": "Public PDF of the presentation slides.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "ai-human-collaboration-devfest-2024",
+    "status": "published",
+    "slug": "ai-human-collaboration-devfest-2024",
+    "title": "AI and Human Collaboration: A Responsible Approach",
+    "summary": "A talk on human–AI collaboration, responsible AI, bias, privacy and accountability.",
+    "date": "2024",
+    "datePrecision": "year",
+    "event": "DevFest 2024",
+    "role": "Speaker",
+    "topics": [
+      "Responsible AI",
+      "Human–AI collaboration",
+      "Privacy and accountability"
+    ],
+    "resources": [
+      {
+        "id": "ai-human-collaboration-devfest-2024-slides",
+        "status": "published",
+        "ownerId": "ai-human-collaboration-devfest-2024",
+        "title": "AI and Human Collaboration: A Responsible Approach — slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/1HzEOWegoQ3Tr7AD9lZE2y9Pc8nhCssSZ/view",
+        "description": "Public PDF of the presentation slides.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "ai-workplace-firs",
+    "status": "published",
+    "slug": "ai-workplace-firs",
+    "title": "Unlocking the Power of AI in the Workplace: Boosting Productivity and Efficiency",
+    "summary": "A technical session on workplace AI, productivity tools and effective prompting, presented at the Kano Large Taxpayers Office.",
+    "date": "2024-09-04",
+    "datePrecision": "day",
+    "event": "FIRS technical session, Kano Large Taxpayers Office",
+    "role": "Speaker",
+    "topics": [
+      "AI and productivity",
+      "Prompting",
+      "Workplace tools"
+    ],
+    "resources": [
+      {
+        "id": "ai-workplace-firs-slides",
+        "status": "published",
+        "ownerId": "ai-workplace-firs",
+        "title": "Unlocking the Power of AI in the Workplace: Boosting Productivity and Efficiency — slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/1G1HSlw0qqR4UPARhKlHcNgfB-rH8rUfS/view",
+        "description": "Public PDF of the presentation slides.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "id": "ai-creativity-google-io-extended",
+    "status": "published",
+    "slug": "ai-creativity-google-io-extended",
+    "title": "Empowering Everyone: Democratizing AI Creativity with Google AI",
+    "summary": "A presentation exploring AI-assisted creativity, Google AI tools, SynthID and responsible use. The slides reflect the tools discussed at the time.",
+    "date": null,
+    "datePrecision": "unknown",
+    "event": "Google I/O Extended",
+    "role": "Speaker",
+    "topics": [
+      "AI and creativity",
+      "Google AI",
+      "Responsible AI"
+    ],
+    "resources": [
+      {
+        "id": "ai-creativity-google-io-extended-slides",
+        "status": "published",
+        "ownerId": "ai-creativity-google-io-extended",
+        "title": "Empowering Everyone: Democratizing AI Creativity with Google AI — slides",
+        "category": "slides",
+        "format": "PDF",
+        "file": null,
+        "externalUrl": "https://drive.google.com/file/d/1pDArirMADpWPsRGZM73_l5wvTwE6q8J0/view",
+        "description": "Public PDF of the presentation slides.",
+        "updatedAt": "2026-10-26",
+        "publicRelease": true,
+        "externalCheckedAt": "2026-10-26"
+      }
+    ]
+  }
+]

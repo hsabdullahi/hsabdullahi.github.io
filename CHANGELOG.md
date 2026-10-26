@@ -2,6 +2,8 @@
 
 ## 26 October 2026
 
+- Updated validation and manual Pages deployment actions to Node 24 runtimes, including the composite Pages uploader and its nested artifact action. Pinned the deployment build runtime to Node 24 to match CI.
+
 - Standardised action icons using a local Lucide SVG subset: right arrow for internal navigation, external-link icon for external websites, arrow-and-tray for downloads, down arrow for scrolling and envelope for email. Academic profile brand glyphs remain separate.
 - Content-handoff review fixed narrow-screen homepage actions: links now wrap without squeezing their labels. Verified at phone, tablet and desktop widths.
 - Incorporated Website_Content_Handoff.md: education/research training, fuller profile and appointments, research interests, teaching statement, professional links and one collaborative research case study. Kept three unsupported project candidates draft and recorded teaching-source discrepancies for verification.
