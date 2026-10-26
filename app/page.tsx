@@ -1,101 +1,218 @@
+import { ActionIcon } from "@/components/action-icon";
+import { AcademicProfileLink } from "@/components/academic-profile-link";
+import { pageMetadata } from "@/lib/metadata";
 import Image from "next/image";
-
+import Link from "next/link";
+import { profile, publications, courses, projects, talks } from "@/lib/content";
+import { assetPath } from "@/lib/site";
+import { SelectedArchives } from "@/components/pages/selected-archives";
+import { StructuredData } from "@/components/structured-data";
+import {
+  SectionHeading,
+  PublicationRow,
+  CourseRow,
+} from "@/components/editorial";
+const homeMetadata = pageMetadata(
+  "Hamza Sulayman Abdullahi | Engineering, education & systems",
+  "Applied engineering, digital manufacturing and engineering education. Dr. Hamza Sulayman Abdullahi, Lecturer I at Bayero University, Kano.",
+  "/",
+);
+export const metadata = {
+  ...homeMetadata,
+  title: {
+    absolute: "Hamza Sulayman Abdullahi | Engineering, education & systems",
+  },
+};
 export default function Home() {
+  const featuredCourses = ["mec3203", "get102", "ate5204"].flatMap((id) => {
+    const course = courses.find((course) => course.id === id);
+    return course ? [course] : [];
+  });
+  const academicProfile =
+    profile.links.find((link) => link.label === "Google Scholar") ??
+    profile.links[0];
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main id="main">
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: profile.name,
+          jobTitle: profile.rank,
+          affiliation: {
+            "@type": "Organization",
+            name: profile.affiliations[0],
+          },
+          sameAs: profile.links.map((l) => l.url),
+        }}
+      />
+      <section
+        className={`hero shell${profile.portrait ? "" : " hero-without-portrait"}`}
+      >
+        <div className="hero-copy">
+          <p className="eyebrow">
+            <span className="tiny-square" /> Engineer. Educator. Systems
+            thinker.
+          </p>
+          <h1>
+            Engineering ideas.
+            <br />
+            <em>Building capacity.</em>
+          </h1>
+          <p className="hero-summary">{profile.summary}</p>
+          <div className="hero-actions">
+            {projects.length > 0 && (
+              <Link className="button" href="/work/">
+                View selected work <ActionIcon kind="internal" />
+              </Link>
+            )}
+            <Link
+              className={projects.length ? "text-link" : "button"}
+              href="/research/"
+            >
+              Explore research <ActionIcon kind="internal" />
+            </Link>
+            <Link className="text-link" href="/teaching/">
+              Explore teaching <ActionIcon />
+            </Link>
+          </div>
+          <div className="appointment">
+            <span className="mono">Current appointment</span>
+            <p>
+              {profile.rank}
+              <br />
+              {profile.affiliations[0]}
+            </p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        {profile.portrait && (
+          <figure className="portrait">
+            <Image
+              src={assetPath(profile.portrait)}
+              alt={`Portrait of ${profile.name}`}
+              width={960}
+              height={1200}
+              sizes="(max-width: 640px) 90vw, 38vw"
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
+            />
+            <figcaption>
+              <span>01 / {profile.name}</span>
+              <span>Kano, Nigeria</span>
+            </figcaption>
+          </figure>
+        )}
+        <div className="hero-bottom">
+          <span>Applied engineering, with people in view.</span>
+          <span className="mono">
+            Scroll to explore <ActionIcon kind="scroll" />
+          </span>
+        </div>
+      </section>
+      <SelectedArchives
+        projects={projects.slice(0, 3)}
+        talks={talks.slice(0, 1)}
+      />
+      <section className="section shell" id="research">
+        <SectionHeading number="01" title="Research">
+          <h2>
+            From material structures
+            <br />
+            to practical possibilities.
+          </h2>
+        </SectionHeading>
+        <div className="research-intro">
+          <p>
+            My research sits within applied engineering and digital
+            manufacturing. Selected publications explore lattice structures,
+            computational design and mechanical behaviour.
+          </p>
+          {academicProfile && (
+            <AcademicProfileLink className="text-link" link={academicProfile} />
+          )}
+        </div>
+        <div className="publications">
+          {publications.slice(0, 3).map((p) => (
+            <PublicationRow key={p.id} publication={p} />
+          ))}
+        </div>
+        <Link
+          className="text-link section-action"
+          href="/research/publications/"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          View all publications <ActionIcon kind="internal" />
+        </Link>
+      </section>
+      <section className="teaching-band" id="teaching">
+        <div className="shell teaching-grid">
+          <div>
+            <p className="eyebrow">02 / Teaching & capacity building</p>
+            <h2>
+              Engineering knowledge.
+              <br />
+              <em>Shared and applied.</em>
+            </h2>
+            <p>
+              Engineering drawing, computational tools and the mechanics of
+              machines: teaching that connects technical ideas with engineering
+              practice.
+            </p>
+            <span className="mono">Bayero University, Kano</span>
+          </div>
+          <div className="course-list">
+            {featuredCourses.map((c) => {
+              return (
+                <CourseRow
+                  key={c.id}
+                  code={c.code}
+                  title={c.title}
+                  href={`/teaching/${c.slug}/`}
+                />
+              );
+            })}
+            <Link
+              className="text-link teaching-action"
+              href="/teaching/materials/"
+            >
+              Search course materials <ActionIcon kind="internal" />
+            </Link>
+            <p className="small">
+              Explore course sessions and find approved learning materials in
+              the teaching archive.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="section shell about-grid" id="about">
+        <div>
+          <p className="eyebrow">03 / About</p>
+          <h2>
+            Across the workshop,
+            <br />
+            classroom and institution.
+          </h2>
+        </div>
+        <div>
+          <p className="lead">
+            I’m Hamza Sulayman Abdullahi, a mechanical engineer and{" "}
+            {profile.rank}
+            at Bayero University, Kano.
+          </p>
+          <p>{profile.biography}</p>
+          <dl className="roles">
+            {profile.appointments.map((a) => (
+              <div key={a.label}>
+                <dt>{a.label}</dt>
+                <dd>{a.description}</dd>
+              </div>
+            ))}
+          </dl>
+          <Link className="text-link section-action-inline" href="/about/">
+            More about my work <ActionIcon kind="internal" />
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

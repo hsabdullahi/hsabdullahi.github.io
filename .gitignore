@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Generated local review routes and captures
+app/review-preview/
+review-evidence/
+# Generated only from validated published records
+app/(archives)/

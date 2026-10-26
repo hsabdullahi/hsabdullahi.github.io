@@ -3,16 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node scripts/sync-routes.mjs && next dev --webpack",
+    "build": "npm run validate:content && node scripts/sync-routes.mjs && next build --webpack",
+    "start": "node scripts/serve.mjs",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "node scripts/typecheck.mjs",
+    "dev:review": "node scripts/preview.mjs",
+    "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
+    "check:output": "node --experimental-strip-types scripts/check-output.ts",
+    "import:publications": "node --experimental-strip-types scripts/import-publications.ts",
+    "test": "node --experimental-strip-types scripts/content-tests.ts",
+    "format": "prettier --write app components lib scripts dev content README.md CONTENT_STATUS.md REVIEW_NOTES.md CHANGELOG.md next.config.ts tsconfig.json package.json .github",
+    "check:performance": "node scripts/performance.mjs",
+    "test:integration": "node scripts/integration-tests.mjs"
   },
   "dependencies": {
-    "next": "^16.3.4",
+    "csv-parse": "^7.0.3",
+    "next": "^16.4.3",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
@@ -21,8 +31,11 @@
     "@types/react-dom": "^19.2.7",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.4",
+    "lighthouse": "^13.5.0",
     "postcss": "^8.5.28",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
-  }
+  },
+  "type": "module"
 }

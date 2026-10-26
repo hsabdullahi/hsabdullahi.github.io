@@ -1,0 +1,34 @@
+[
+  {
+    "id": "multi-topology-lattice-design",
+    "status": "published",
+    "slug": "multi-topology-lattice-design",
+    "title": "Computational design of multi-topology lattice structures",
+    "context": "My research explores computational approaches to designing lattice structures with different unit-cell topologies. During postdoctoral work at Zhejiang University, I developed a unit-cell library to support this design process. The resulting collaborative research was published in Mechanics Based Design of Structures and Machines.",
+    "contribution": "During my postdoctoral appointment at Zhejiang University, from August 2021 to July 2023, I developed a unit-cell library to support multi-topology lattice design. This was collaborative research with Shurong Zhuo, Dongying Fu and Shuming Gao.",
+    "problem": "Lattice design requires selecting and combining unit-cell geometries to meet engineering objectives. This research explores multi-topology lattice structures supported by a high-quality unit-cell library.",
+    "outputs": [
+      "A collaborative paper published in 2024; the publication year is distinct from the postdoctoral appointment period."
+    ],
+    "publicationIds": ["Abdullahi202410046"],
+    "images": [],
+    "disclosureApproved": true,
+    "start": null,
+    "end": null
+  },
+  {
+    "id": "klastra",
+    "status": "draft",
+    "title": "Klastra and institutional digital learning systems"
+  },
+  {
+    "id": "eddy",
+    "status": "draft",
+    "title": "EDDY: Engineering Drawing AI tutor"
+  },
+  {
+    "id": "cad-cam-laboratory",
+    "status": "draft",
+    "title": "CAD/CAM Laboratory development"
+  }
+]

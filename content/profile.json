@@ -1,0 +1,108 @@
+{
+  "id": "hamza",
+  "status": "published",
+  "name": "Dr. Hamza Sulayman Abdullahi",
+  "rank": "Lecturer I",
+  "affiliations": ["Mechanical Engineering, Bayero University, Kano"],
+  "summary": "I work across engineering research, education, and digital systems, developing practical ways to strengthen technical and institutional capacity.",
+  "links": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=nnydmEEAAAAJ&hl=en"
+    },
+    {
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0002-2383-3641"
+    },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Hamza-Abdullahi"
+    },
+    {
+      "label": "Scopus",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=57192435006"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/hamza-sulayman-abdullahi/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/hsabdullahi"
+    }
+  ],
+  "portrait": "/images/hamza.webp",
+  "email": null,
+  "cv": null,
+  "appointments": [
+    {
+      "label": "Academic appointment",
+      "description": "Lecturer I \u00b7 promoted October 2024. University employment began in 2015."
+    },
+    {
+      "label": "Laboratory leadership",
+      "description": "Head, CAD/CAM Laboratory \u00b7 since 15 December 2025"
+    },
+    {
+      "label": "Distance learning",
+      "description": "Deputy Director, Centre for Distance Learning, Bayero University, Kano"
+    },
+    {
+      "label": "Entrepreneurship",
+      "description": "Founder and Chief Executive Officer, Voost Technologies Limited (Voostech). Founded in 2015; incorporated in 2021."
+    },
+    {
+      "label": "Recognition",
+      "description": "Knight of Zhejiang Lab \u00b7 2018"
+    }
+  ],
+  "biography": "I am a mechanical engineering academic and technology entrepreneur based in Kano, Nigeria. My work connects computational design, digital manufacturing, engineering education, and the development of practical digital systems. At Bayero University, Kano, I serve as Lecturer I in Mechanical Engineering, Head of the CAD/CAM Laboratory, and Deputy Director of the Centre for Distance Learning. I also lead Voostech, bringing together software development and technology education.",
+  "postnominalName": "Hamza Sulayman Abdullahi, Ph.D.",
+  "teachingStatement": "I teach engineering drawing, computer applications, mechanisms, and finite element methods. My teaching combines foundational principles with practical exercises and engineering software, helping students connect analytical ideas with the tasks they will encounter in engineering practice.",
+  "researchThemes": [
+    "Computer-aided design",
+    "Structural optimisation",
+    "Computational mechanics",
+    "Finite element analysis",
+    "Additive manufacturing",
+    "Lightweight and lattice structures",
+    "Crashworthiness",
+    "AI and machine learning in engineering design and analysis"
+  ],
+  "education": [
+    {
+      "qualification": "Doctor of Engineering",
+      "institution": "Zhejiang University, Hangzhou, China",
+      "start": "2016-09",
+      "end": "2021-03",
+      "field": "Computer Science and Technology; specialisation in Computer-Aided Design",
+      "dissertation": "Simulation-driven optimization design of tubular structures for enhanced crashworthiness."
+    },
+    {
+      "qualification": "Master of Technology",
+      "institution": "SRM University, Chennai, India",
+      "start": "2013-07",
+      "end": "2015-05",
+      "field": "Computer-Aided Design",
+      "dissertation": "Stiffness matrices of plane triangular elements using Universal Matrix Method and Gauss-Quadratures."
+    },
+    {
+      "qualification": "Bachelor of Engineering",
+      "institution": "Bayero University, Kano, Nigeria",
+      "start": "2004-09",
+      "end": "2010-01",
+      "field": "Mechanical Engineering",
+      "dissertation": null
+    }
+  ],
+  "researchTraining": [
+    {
+      "qualification": "Postdoctoral Researcher",
+      "institution": "Zhejiang University, China",
+      "start": "2021-08",
+      "end": "2023-07",
+      "field": "Computational design and lattice structures",
+      "dissertation": null
+    }
+  ]
+}
